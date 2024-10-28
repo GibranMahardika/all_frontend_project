@@ -198,7 +198,7 @@ section {
 }
 
 .store-content {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     align-items: center;
     gap: 2rem;
@@ -348,7 +348,7 @@ section {
     transition: transform 0.6s;
     cursor: pointer;
     margin-left: 50px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .row-img img:hover {
@@ -366,8 +366,78 @@ section {
     font-size: var(--p-font);
     font-weight: 500;
     margin-bottom: 7px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
+.row h6 {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.row .s-btn a {
+    position: absolute;
+    bottom: 73px;
+    left: 0;
+    right: 0;
+    padding: 13px;
+    background: rgb(0, 0, 0, 0.8);
+    color: var(--bg-color);
+    transition: opacity 0.5s;
+    opacity: 0;
+}
+
+.row:hover .s-btn a {
+    opacity: 1;
+}
 /* end seller section */
+
+/* start cta section */
+
+.cta {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7)),url(../img/hero_hotdog_3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.cta-content h2 {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--bg-color);
+    margin-bottom: 15px;
+}
+
+.cta-content p {
+    font-size: var(--p-font);
+    font-weight: 600;
+    color: var(--bg-color);
+    margin-bottom: 35px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 11px 40px;
+    font-size: 14px;
+    font-weight: 600;
+    background: var(--bg-color);
+    color: var(--text-color);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all .6s ease;
+}
+
+.cta-btn:hover {
+    background: var(--main-color);
+    color: var(--bg-color);
+}
+
+/* end cta section */
+
 /* end section */
